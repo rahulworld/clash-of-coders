@@ -2,7 +2,7 @@
   "name": "clash-of-coders",
   "version": "1.0.0",
   "description": "project",
-  "main": "index.js",
+  "main": "server/src/server.js",
   "scripts": {
     "start": "npm install --prefix server && npm run start --prefix server",
     "test": "echo \"Error: no test specified\" && exit 1"
