@@ -1,0 +1,78 @@
+{
+    "data": [
+        {
+            "widgetId": 1,
+            "widgetType": "fullWidthBanner",
+            "widgetName": "NoLaptopCourse",
+            "imageUrl": "https://imageurl",
+            "deeplink": "deeplink url needed for navigation"
+        },
+        {
+            "widgetId": 3,
+            "widgetType": "Separator",
+            "widgetName": "AppRatingWidget",
+            "imageUrl": "https://youtubeurl",
+            "deeplink": "deeplink url needed for navigation"
+        },
+        {
+            "widgetId": 4,
+            "widgetName": "Separator",
+            "widgetType": "upcomingClass",
+            "data": {}
+        },
+        {
+            "widgetId": 5,
+            "widgetType": "certificate",
+            "widgetName": "Video",
+            "imageUrl": "certificate Url"
+        },
+        {
+            "widgetId": 6,
+            "widgetType": "bookNewClass",
+            "widgetName": "MathRedirectionNudge",
+            "data": {}
+        },
+        {
+            "widgetId": 7,
+            "widgetType": "scrollingBanners",
+            "widgetName": "margin16View",
+            "title": "",
+            "subTitle": "",
+            "imageUrl": [
+                {
+                    "imagrUrl": "",
+                    "deeplinkUrl": ""
+                }
+            ]
+        },
+        {
+            "widgetId": 8,
+            "widgetType": "fullWidthBanner",
+            "widgetName": "WallOfFame",
+            "imageUrl": "https://imageurl",
+            "deeplink": "deeplink url needed for navigation"
+        },
+        {
+            "widgetId": 9,
+            "widgetType": "fullWidthBanner",
+            "widgetName": "margin16View",
+            "imageUrl": "https://imageurl",
+            "deeplink": "deeplink url needed for navigation"
+        },
+        {
+            "widgetId": 10,
+            "widgetType": "fullWidthBanner",
+            "widgetName": "margin16View",
+            "imageUrl": "https://imageurl",
+            "deeplink": "deeplink url needed for navigation"
+        },
+        {
+            "compId": 11,
+            "widgetId": 11,
+            "widgetName": "margin16View",
+            "widgetType": "fullWidthBanner",
+            "imageUrl": "https://imageurl",
+            "deeplink": "deeplink url needed for navigation"
+        }
+    ]
+}
