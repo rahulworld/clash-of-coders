@@ -8,23 +8,13 @@
             "deeplink": "deeplink url needed for navigation"
         },
         {
-            "widgetId": 2,
-            "widgetType": "bannerWithHeading",
-            "widgetName": "UpdateInfo",
-            "title": "",
-            "subTitle": "",
-            "imageUrl": "https://imageurl",
-            "deeplink": "deeplink url needed for navigation"
-        },
-        {
-            "widgetId": 3,
-            "widgetType": "Separator",
+            "widgetId": 11,
             "widgetName": "AppRatingWidget",
             "imageUrl": "https://youtubeurl",
             "deeplink": "deeplink url needed for navigation"
         },
         {
-            "widgetId": 4,
+            "widgetId": 13,
             "widgetName": "Separator",
             "widgetType": "upcomingClass",
             "data": {}
@@ -42,7 +32,7 @@
             "data": {}
         },
         {
-            "widgetId": 7,
+            "widgetId": 14,
             "widgetType": "scrollingBanners",
             "widgetName": "margin16View",
             "title": "",
@@ -62,21 +52,21 @@
             "deeplink": "deeplink url needed for navigation"
         },
         {
-            "widgetId": 9,
+            "widgetId": 14,
             "widgetType": "fullWidthBanner",
             "widgetName": "margin16View",
             "imageUrl": "https://imageurl",
             "deeplink": "deeplink url needed for navigation"
         },
         {
-            "widgetId": 10,
+            "widgetId": 14,
             "widgetType": "fullWidthBanner",
             "widgetName": "margin16View",
             "imageUrl": "https://imageurl",
             "deeplink": "deeplink url needed for navigation"
         },
         {
-            "widgetId": 11,
+            "widgetId": 14,
             "widgetType": "fullWidthBanner",
             "widgetName": "margin16View",
             "imageUrl": "https://imageurl",
