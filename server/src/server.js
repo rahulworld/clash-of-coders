@@ -17,9 +17,9 @@ app.use(helmet());
 app.use(cors({
     // origin: 'http://localhost:3000',
     origin: "*",
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    preflightContinue: false,
-    optionsSuccessStatus: 204
+    // methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    // preflightContinue: false,
+    // optionsSuccessStatus: 204
 }));
 app.use(morgan('combined'));
 app.use(express.json());
@@ -32,8 +32,8 @@ app.use('/', dashboardRouter);
 //     return res.send('Hey! Welcom to Clash of coders');
 // });
 
-app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "public", "index.html"));
 })
 
 async function startServer() {
