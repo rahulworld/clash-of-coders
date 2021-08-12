@@ -1,11 +1,14 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const helmet = require('helmet');
+const {connectMongoDB} = require('./services/mongo');
+const {writeDefultPages} = require('./models/dashboard.model');
+
 
 const app = express();
 
-require('dotenv').config();
 
 const dashboardRouter = require('./routes/dashboard/dashboard.routes');
 
@@ -27,8 +30,14 @@ app.get('/home', (req, res) => {
     return res.send('Hey! Welcom to Clash of coders');
 });
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server is listening at  ${process.env.PORT}...`);
-});
+async function startServer() {
+    await connectMongoDB();
+    await writeDefultPages();
+    app.listen(process.env.PORT, () => {
+        console.log(`Server is listening at  ${process.env.PORT}...`);
+    });
+}
+
+startServer();
 
 
