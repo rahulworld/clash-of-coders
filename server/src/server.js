@@ -28,9 +28,13 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 
 app.use('/', dashboardRouter);
 
-app.get('/home', (req, res) => {
-    return res.send('Hey! Welcom to Clash of coders');
-});
+// app.get('/home', (req, res) => {
+//     return res.send('Hey! Welcom to Clash of coders');
+// });
+
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+})
 
 async function startServer() {
     await connectMongoDB();
