@@ -1,0 +1,23 @@
+{
+  "name": "clash-of-coders",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install --prefix server && npm run start --prefix server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulworld/clash-of-coders.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulworld/clash-of-coders/issues"
+  },
+  "homepage": "https://github.com/rahulworld/clash-of-coders#readme",
+  "engines": {
+    "node": "14.x"
+  }
+}
