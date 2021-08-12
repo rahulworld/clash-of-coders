@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const helmet = require('helmet');
+const morgan = require('morgan');
 const {connectMongoDB} = require('./services/mongo');
 const {writeDefultPages} = require('./models/dashboard.model');
 
@@ -20,6 +21,7 @@ app.use(cors({
     preflightContinue: false,
     optionsSuccessStatus: 204
 }));
+app.use(morgan('combined'));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "..", "public")));
 
