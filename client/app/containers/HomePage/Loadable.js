@@ -141,7 +141,7 @@ function App() {
                   display: 'flex',
                   flexDirection: 'column',
                 }}
-                key={item.widgetId}
+                key={item.componentId}
               >
                 <div style={{ display: 'inline-block' }}>
                   {/* {item.widgetName} */}
