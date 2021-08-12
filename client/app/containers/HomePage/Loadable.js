@@ -61,6 +61,17 @@ function App() {
     setInputJson(text);
   }
 
+  function isThin(widgetId) {
+    console.log('widgetId', widgetId);
+    switch (widgetId) {
+      case 14:
+      case 13:
+        return true;
+      default:
+        return false;
+    }
+  }
+
   return (
     <div className="App">
       <h1>Change Dashboard as you like and Publish</h1>
@@ -137,7 +148,11 @@ function App() {
                   <img
                     src={`${baseUrl}/images/${item.widgetName}.jpg`}
                     alt={`${item.widgetName}`}
-                    style={{ height: 300, width: 300 }}
+                    style={
+                      isThin(item.widgetId)
+                        ? { height: 20, width: 300 }
+                        : { height: 300, width: 300 }
+                    }
                   />
                 </div>
               </div>
