@@ -4,7 +4,7 @@
   "description": "project",
   "main": "server/src/server.js",
   "scripts": {
-    "build": "npm install --prefix client && npm install --prefix server && npm run build --prefix client && npm run start --prefix server",
+    "npmbuild": "npm install --prefix client && npm install --prefix server && npm run build --prefix client && npm run start --prefix server",
     "start": "npm install --prefix server && npm run start --prefix server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
