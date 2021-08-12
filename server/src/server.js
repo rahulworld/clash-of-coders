@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const helmet = require('helmet');
 
@@ -17,6 +18,7 @@ app.use(cors({
     optionsSuccessStatus: 204
 }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "..", "public")));
 
 
 app.use('/', dashboardRouter);
